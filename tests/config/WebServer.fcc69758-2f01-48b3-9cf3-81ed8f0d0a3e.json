@@ -1,0 +1,14 @@
+{
+  "/oic/d": {
+    "di": "fcc69758-2f01-48b3-9cf3-81ed8f0d0a3e"
+  },
+  "/oic/con": {
+    "udpCoapPort": 63972,
+    "running_devices": [
+      {
+        "di": "f4963e38-70d4-4fce-b0a0-4cd21f267303",
+        "dmno": "TestDevice"
+      }
+    ]
+  }
+}

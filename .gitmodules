@@ -1,0 +1,3 @@
+[submodule "ui/src/BubotCore"]
+	path = ui/src/BubotCore
+	url = https://github.com/businka/vuetify_bubot_core.git

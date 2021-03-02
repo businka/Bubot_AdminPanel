@@ -1,0 +1,5 @@
+build/*.js
+src/vendor
+/src/BubotCore/vendor/
+public
+dist

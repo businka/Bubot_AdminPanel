@@ -1,0 +1,23 @@
+{
+  "NavDrawer": {
+    "Resources": "Resources",
+    "Drivers": "Drivers",
+    "Devices": "Devices"
+  },
+  "$vuetify": {
+    "noDataText": "Ничего не найдено",
+    "dataIterator": {"loadingText": "Loading..."},
+    "dataTable": {
+      "itemsPerPageText": "Показать",
+      "ariaLabel": {
+        "sortNone": "Нет сортировки"
+      }
+    },
+    "dataFooter": {
+      "pageText": "",
+      "nextPage": "Предыдущая",
+      "prevPage": "Следующая",
+      "itemsPerPageAll": "Все"
+    }
+  }
+}
