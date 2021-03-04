@@ -15,7 +15,7 @@ setuptools.setup(
     url="https://github.com/businka/Bubot_AdminPanel",
     package_dir={'': 'src'},
     package_data={
-        '': ['*.md', '*.json'],
+        '': ['*.md', '*.json', '*.css', '*.woff', '*.woff2', '*.js', '*.svg', '*.png', '*.css', '*.html'],
     },
     packages=setuptools.find_namespace_packages(where='src'),
     classifiers=[
