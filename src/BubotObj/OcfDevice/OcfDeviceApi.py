@@ -11,7 +11,7 @@ class OcfDeviceApi(CatalogObjApi):
     async def api_discover(self, view, **kwargs):
         handler, data = await self.prepare_json_request(view)
         result = []
-        devices = await view.device.discovery_resource()
+        devices = await view.device.transport_layer.discovery_resource()
         await view.notify({'message': f'found {len(devices)}'})
         for _id in devices:
             di = devices[_id].di

@@ -28,7 +28,7 @@ class AdminPanelApi(DeviceApi):
                 }
             ],
             'index': {},
-            'default': '/OcfDevice/List'
+            'default': '/OcfDevice/List/'
         }
 
         return self.response.json_response(result)

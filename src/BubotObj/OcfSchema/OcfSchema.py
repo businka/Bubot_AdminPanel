@@ -1,6 +1,6 @@
 from Bubot.Core.Obj import Obj
 from Bubot.Helpers.JsonSchema.JsonSchema4 import JsonSchema4
-from Bubot.Core.Ocf import find_schemas
+from Bubot.Ocf.Helper import find_schemas
 from Bubot.Helpers.Action import async_action, action
 
 

@@ -1,0 +1,18 @@
+{
+  "/oic/d": {
+    "di": "43054446-20a0-4cdc-9cff-50b5067eb351",
+    "piid": "43054446-20a0-4cdc-9cff-50b5067eb351"
+  },
+  "/oic/con": {
+    "udpCoapPort": 49814,
+    "udpCoapSslPort": 49815
+  },
+  "/oic/sec/doxm": {
+    "deviceuuid": "43054446-20a0-4cdc-9cff-50b5067eb351"
+  },
+  "/oic/sec/pstat": {
+    "dos": {
+      "s": 0
+    }
+  }
+}

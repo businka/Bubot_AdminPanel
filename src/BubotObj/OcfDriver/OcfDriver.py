@@ -1,5 +1,5 @@
 from Bubot.Core.Obj import Obj
-from Bubot.Core.Ocf import find_drivers
+from Bubot.Ocf.Helper import find_drivers
 from BubotObj.OcfDevice.subtype.Device.Device import Device
 
 

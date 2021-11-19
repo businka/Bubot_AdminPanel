@@ -1,5 +1,5 @@
 {
-  "template": "Browser",
+  "template": "OcfDeviceBrowser",
   "dataSource": {
     "type": "Service",
     "keyProperty": "_id",
@@ -7,6 +7,10 @@
   },
   "toolbarItemsBeforeFilter": [
     {
+      "name": "AddDevice",
+      "icon": "mdi-plus",
+      "title": "Add device"
+    },    {
       "name": "CallDataSourceForSelectedItems",
       "icon": "mdi-radar",
       "title": "Discover",
