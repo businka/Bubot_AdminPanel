@@ -1,8 +1,8 @@
 <script>
 import BaseTemplateMixin from '../../BubotCore/helpers/mixinTemplate/baseForm'
 import ActionMixin from '../../BubotCore/helpers/mixinTemplate/action'
-import { updateObject, objHasOwnProperty } from '../../BubotCore/helpers/baseHelper'
-import { initDataSource } from '../../BubotCore/components/Types/Source/DataSourceLoader'
+import { updateObject, objHasOwnProperty } from '../../Helpers/BaseHelper'
+import { initDataSource } from '../../BubotCore/components/DataSource/DataSourceLoader'
 import storage from './store'
 // import Vue from 'vue'
 import schemaStorage from './OcfSchema.store'

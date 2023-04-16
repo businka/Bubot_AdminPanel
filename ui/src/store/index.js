@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import AppConst from '../AppConst'
 
 import { coreGetters, coreModules } from '../BubotCore/store/index'
 // import { wsState, wsActions, wsMutations} from '../BubotCore/store/ws'
@@ -11,7 +12,7 @@ export default new Vuex.Store({
   // mutations: Object.assign({}, wsMutations),
   // actions: Object.assign({}, wsActions),
   state: {
-    app: 'AdminPanel'
+    appName: AppConst.appName
   },
   getters: Object.assign({}, coreGetters),
   modules: Object.assign({}, coreModules)

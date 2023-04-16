@@ -1,28 +1,27 @@
+from Bubot.Core.ObjApi import ObjApi
+from Bubot.Helpers.ActionDecorator import async_action
 from BubotObj.OcfDevice.OcfDevice import OcfDevice
-from Bubot.Core.CatalogObjApi import CatalogObjApi
-from Bubot.Helpers.Action import async_action
-from Bubot.Helpers.ExtException import ExtException, KeyNotFound
 
 
-class OcfDeviceApi(CatalogObjApi):
+class OcfDeviceApi(ObjApi):
     handler = OcfDevice
 
     @async_action
     async def api_discover(self, view, **kwargs):
         handler, data = await self.prepare_json_request(view)
-        result = []
+        # result = []
         devices = await view.device.transport_layer.discovery_resource()
-        await view.notify({'message': f'found {len(devices)}'})
-        for _id in devices:
-            di = devices[_id].di
-            try:
-                _device = await handler.find_by_id(di)
-            except KeyNotFound:
-                _device = devices[_id].to_object_data()
+        # await view.notify({'message': f'found {len(devices)}'})
+        # for device in devices:
+        #     di = device['di']
+        #     try:
+        #         _device = await handler.find_by_id(di)
+        #     except KeyNotFound:
+        #         _device = devices[_id].to_object_data()
+        #
+        #     result.append(_device)
 
-            result.append(_device)
-
-        return self.response.json_response(result)
+        return self.response.json_response({'rows': devices})
 
     @async_action
     async def api_mass_add(self, view, **kwargs):

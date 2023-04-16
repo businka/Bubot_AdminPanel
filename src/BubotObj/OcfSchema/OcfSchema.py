@@ -1,7 +1,7 @@
 from Bubot.Core.Obj import Obj
 from Bubot.Helpers.JsonSchema.JsonSchema4 import JsonSchema4
 from Bubot.Ocf.Helper import find_schemas
-from Bubot.Helpers.Action import async_action, action
+from Bubot.Helpers.ActionDecorator import async_action, action
 
 
 class OcfSchema(Obj):

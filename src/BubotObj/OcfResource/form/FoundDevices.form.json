@@ -1,5 +1,5 @@
 {
-  "template": "Browser",
+  "template": "OcfFoundDeviceBrowser",
   "operationsPanelItems": [
     {
       "name": "DataSourceItemsOperation",
@@ -24,7 +24,7 @@
   },
   "columns": [
     {
-      "field": "name",
+      "field": "n",
       "width": "100%",
       "align": "left",
       "template": "RowCellDefault",

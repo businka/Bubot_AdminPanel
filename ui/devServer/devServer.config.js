@@ -2,23 +2,26 @@ const config = {
   // https: true,
   // host: '0.0.0.0',
   // port: 8080,
-  port: 8080,
+  port: 8285,
   open: false, // opens browser window automatically
   proxy: {
-    '/ui/AuthService': {
-      target: 'http://localhost'
+    '/AdminPanel/api': {
+      target: 'http://localhost:8085'
     },
-    '/api': {
-      target: 'http://localhost'
+    '/AdminPanel/public_api': {
+      target: 'http://localhost:8085'
     },
-    '/i18n': {
-      target: 'http://localhost'
+    '/AdminPanel/i18n': {
+      target: 'http://localhost:8085'
     },
-    '/form': {
-      target: 'http://localhost'
+    '/AdminPanel/form': {
+      target: 'http://localhost:8085'
     },
-    '/ws': {
-      target: 'ws://localhost',
+    '/AuthService': {
+      target: 'http://localhost:8085'
+    },
+    '/AdminPanel/ws': {
+      target: 'ws://localhost:8085',
       changeOrigin: true,
       ws: true
     }

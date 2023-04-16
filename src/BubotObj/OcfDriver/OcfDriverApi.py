@@ -1,14 +1,14 @@
 from BubotObj.OcfDriver.OcfDriver import OcfDriver
-from Bubot.Core.CatalogObjApi import CatalogObjApi
+from Bubot.Core.ObjApi import ObjApi
 from Bubot.Core.DeviceLink import DeviceLink
 from BubotObj.OcfDevice.subtype.Device.Device import Device
-from Bubot.Helpers.Action import async_action
+from Bubot.Helpers.ActionDecorator import async_action
 from BubotObj.OcfDevice.OcfDevice import OcfDevice
 from datetime import datetime
 import asyncio
 
 
-class OcfDriverApi(CatalogObjApi):
+class OcfDriverApi(ObjApi):
     handler = OcfDriver
 
     @async_action

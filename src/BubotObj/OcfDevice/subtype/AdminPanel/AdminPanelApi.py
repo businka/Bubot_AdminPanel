@@ -1,5 +1,5 @@
-from Bubot.Helpers.Action import async_action, Action
-from BubotObj.OcfDevice.subtype.WebServer.ApiHelper import DeviceApi
+from Bubot.Helpers.ActionDecorator import async_action
+from Bubot.Core.ObjApi import DeviceApi
 
 
 class AdminPanelApi(DeviceApi):

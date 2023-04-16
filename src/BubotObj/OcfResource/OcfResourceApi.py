@@ -1,11 +1,11 @@
 from BubotObj.OcfResource.OcfResource import OcfResource
 from Bubot.Core.DeviceLink import ResourceLink
-from Bubot.Core.CatalogObjApi import CatalogObjApi
+from Bubot.Core.ObjApi import ObjApi
 from BubotObj.OcfDevice.subtype.Device.Device import Device
-from Bubot.Helpers.Action import async_action
+from Bubot.Helpers.ActionDecorator import async_action
 
 
-class OcfResourceApi(CatalogObjApi):
+class OcfResourceApi(ObjApi):
     handler = OcfResource
 
     def __init__(self, response, **kwargs):

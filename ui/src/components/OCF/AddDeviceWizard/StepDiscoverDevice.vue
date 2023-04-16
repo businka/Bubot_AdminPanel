@@ -1,5 +1,5 @@
 <script>
-import Browser from '../../../BubotCore/components/Layouts/Browser'
+import Browser from '../../../BubotCore/components/Layouts/TableBrowser'
 
 export default {
   name: 'Step2Ecosystem',

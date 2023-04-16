@@ -1,10 +1,10 @@
 <script>
 import ActionMixin from '../../BubotCore/helpers/mixinTemplate/action'
-import { objHasOwnProperty } from '../../BubotCore/helpers/baseHelper'
+import { objHasOwnProperty } from '../../Helpers/BaseHelper'
 import ocfSchemaStore from './OcfSchema.store'
 import ocfResourceStore from './OcfResource.store'
 import { updateProp } from '../../BubotCore/components/JsonEditor/JsonHelper'
-import { jsonClone } from '../../BubotCore/helpers/clone'
+import { jsonClone } from '../../Helpers/clone'
 
 export default {
   name: 'OcfResourceTmpl2',

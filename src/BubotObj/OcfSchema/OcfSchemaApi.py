@@ -1,8 +1,8 @@
 from BubotObj.OcfSchema.OcfSchema import OcfSchema
 
-from Bubot.Core.CatalogObjApi import CatalogObjApi
+from Bubot.Core.ObjApi import ObjApi
 
 
-class OcfSchemaApi(CatalogObjApi):
+class OcfSchemaApi(ObjApi):
     handler = OcfSchema
 

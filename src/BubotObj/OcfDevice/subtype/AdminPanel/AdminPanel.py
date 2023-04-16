@@ -10,7 +10,8 @@ class AdminPanel(Device):
         path_device = os.path.dirname(self.file)
         # def add_route(app, ui_name, ui_view):
 
-        static_path = '{}/static'.format(path_device)
+        # static_path = '{}/static'.format(path_device)
         # app.router.add_route('*', '/scheduler/api/{handler}', API)
         # app.router.add_static('/scheduler', static_path)
-        app.router.add_static(f'/ui/{self.__class__.__name__}/', f'{path_device}/static/ui')
+        app.router.add_static(f'/{self.__class__.__name__}/ui/', f'{path_device}/static/ui')
+        app.router.add_static(f'/{self.__class__.__name__}/i18n/', f'{self.path}/i18n')

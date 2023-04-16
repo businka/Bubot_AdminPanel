@@ -3,7 +3,7 @@ import App from './BubotCore/App'
 import vuetify from './BubotCore/plugins/vuetify';
 import './BubotCore/plugins/cookies';
 import store from './store'
-import './BubotCore/plugins/ws'
+import './BubotCore/plugins/websocket'
 import { i18n, loadLanguageAsync } from './BubotCore/plugins/i18n'
 import router from './router'
 

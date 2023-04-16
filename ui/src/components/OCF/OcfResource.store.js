@@ -3,7 +3,7 @@
 // import { initStoreKey, updateItemProps } from '../../BubotCore/helpers/mixinStore/mutations'
 // import { mode, getProps } from '../../BubotCore/helpers/mixinStore/getters'
 import buxios from '../../BubotCore/helpers/buxios'
-import { objHasOwnProperty, updateObject } from '../../BubotCore/helpers/baseHelper'
+import { objHasOwnProperty, updateObject } from '../../Helpers/BaseHelper'
 import Vue from 'vue'
 
 export default {

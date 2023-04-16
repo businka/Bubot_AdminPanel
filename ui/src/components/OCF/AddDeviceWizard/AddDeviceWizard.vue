@@ -1,5 +1,5 @@
 <script>
-import { updateObject } from '../../../BubotCore/helpers/baseHelper'
+import { updateObject } from '../../../Helpers/BaseHelper'
 
 export default {
   name: 'AddDeviceWizard',
