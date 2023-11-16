@@ -1,0 +1,38 @@
+{
+  "template": "OcfFoundDeviceBrowser",
+  "dataSource": {
+    "type": "Memory",
+    "keyProperty": "di",
+    "objName": "OcfDevice"
+  },
+  "operationsPanelItems": [
+    {
+      "name": "CallDataSourceForSelectedItems",
+      "title": "Добавить устройство",
+      "data": {
+        "method": "mass_add",
+        "dataSource": {
+          "type": "Service",
+          "objName": "OcfDevice"
+        }
+      }
+    }
+  ],
+  "rowTemplate": "rowViewer",
+  "rowActivateHandler": {
+    "name": "RightDrawerFormViewer3",
+    "form": "OcfDevice/Item"
+  },
+  "columns": [
+    {
+      "fieldTitle": "n",
+      "subtitleField": "di",
+      "align": "left",
+      "template": "CellOcfDeviceTitle",
+      "width": "100%"
+    }
+  ],
+  "col_xl": 6,
+  "col_lg": 7,
+  "inlineActions": {}
+}

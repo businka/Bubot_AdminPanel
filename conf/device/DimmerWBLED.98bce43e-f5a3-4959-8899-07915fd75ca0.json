@@ -1,0 +1,36 @@
+{
+  "/oic/p": {
+    "mnpv": "Jul 20 2017\u000012:00:54\u0000"
+  },
+  "/oic/d": {
+    "di": "98bce43e-f5a3-4959-8899-07915fd75ca0",
+    "piid": "cd47fe82-731a-4091-b86e-204e28543c43"
+  },
+  "/oic/con": {
+    "udpCoapPort": 61170,
+    "slave": 191,
+    "master": {
+      "eps": [
+        {
+          "ep": "coap://192.168.1.11:52475",
+          "net_interface": "192.168.1.11"
+        }
+      ],
+      "di": "6d350e5d-8b7c-459e-a671-e5860b318796",
+      "n": "Serial server HF511A"
+    }
+  },
+  "/oic/sec/pstat": {
+    "dos": {
+      "s": 0
+    }
+  },
+  "/brightness": {
+    "n": "Яркость кабинет",
+    "brightness": 20
+  },
+  "/power": {
+    "n": "Свет кабинет лента",
+    "value": true
+  }
+}

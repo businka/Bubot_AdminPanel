@@ -1,13 +1,12 @@
 <script>
-import ActionMixin from '../../BubotCore/helpers/mixinTemplate/action'
+import ActionMixin from '@/BubotCore/helpers/mixinTemplate/action'
 import OcfResourceTmplMixin from './OcfResourceTmplMixin'
-
+import {defineAsyncComponent} from "vue"
 
 export default {
   name: 'OcfDriverResource',
   components: {
-    JsonElem: () => import('../../BubotCore/components/JsonEditor/JsonElem'),
-    // JsonEditor: () => import('./JsonEditor'),
+    JsonElem: defineAsyncComponent(() => import('@/BubotCore/components/JsonEditor/JsonElem')),
   },
   mixins: [ActionMixin, OcfResourceTmplMixin],
   computed: {

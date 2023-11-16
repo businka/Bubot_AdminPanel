@@ -1,5 +1,5 @@
 <script>
-import Browser from '../../BubotCore/components/Layouts/TableBrowser'
+import Browser from '@/BubotCore/components/TableBrowser/TableBrowser'
 
 export default {
   name: 'OcfDriverBrowser',

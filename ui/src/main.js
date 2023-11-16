@@ -1,32 +1,23 @@
-import Vue from 'vue'
-import App from './BubotCore/App'
-import vuetify from './BubotCore/plugins/vuetify';
-import './BubotCore/plugins/cookies';
-import store from './store'
-import './BubotCore/plugins/websocket'
-import { i18n, loadLanguageAsync } from './BubotCore/plugins/i18n'
-import router from './router'
+/**
+ * main.js
+ *
+ * Bootstraps Vuetify and other plugins then mounts the App`
+ */
 
-import './BubotCore/AppComponents'
-import './AppComponents'
+// Components
+import App from './BubotCore/App.vue'
 
-Vue.config.productionTip = false
+// Composables
+import { createApp } from 'vue'
 
-// import VueNativeSock from 'vue-native-websocket'
-//
-// Vue.use(VueNativeSock, `ws://${window.location.host}/ws`, {
-//   reconnection: true, // (Boolean) whether to reconnect automatically (false)
-//   // reconnectionAttempts: 5, // (Number) number of reconnection attempts before giving up (Infinity),
-//   reconnectionDelay: 3000, // (Number) how long to initially wait before attempting a new (1000)
-//   // store: store,
-//   // format: 'json'
-// })
-loadLanguageAsync()
+// Plugins
+import { registerPlugins } from '@/plugins'
+import registerCoreComponents from './AppComponents'
 
-new Vue({
-  vuetify,
-  store,
-  router,
-  i18n,
-  render: h => h(App)
-}).$mount('#app')
+const app = createApp(App)
+
+registerPlugins(app)
+registerCoreComponents(app)
+
+app.mount('#app')
+export default app

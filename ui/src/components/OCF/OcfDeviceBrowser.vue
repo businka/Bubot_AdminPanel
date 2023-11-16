@@ -1,10 +1,11 @@
 <script>
-import Browser from '../../BubotCore/components/Layouts/TableBrowser'
+import Browser from '@/BubotCore/components/TableBrowser/TableBrowser'
+import {defineAsyncComponent} from "vue"
 
 export default {
   name: 'OcfDeviceBrowser',
   components: {
-    AddDeviceWizard: () => import('./AddDeviceWizard/AddDeviceWizard'),
+    AddDeviceWizard: defineAsyncComponent(() => import('./AddDeviceWizard/AddDeviceWizard')),
   },
   mixins: [Browser],
   methods: {

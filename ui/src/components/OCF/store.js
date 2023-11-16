@@ -1,7 +1,7 @@
-import { processInDataSource } from '../../BubotCore/helpers/mixinStore/index'
-import { initForm, error } from '../../BubotCore/helpers/mixinStore/actions'
-import { initStoreKey, updateItemProps } from '../../BubotCore/helpers/mixinStore/mutations'
-import { mode, getProps } from '../../BubotCore/helpers/mixinStore/getters'
+import {processInDataSource} from '@/BubotCore/helpers/mixinStore'
+import {initForm, error} from '@/BubotCore/helpers/mixinStore/actions'
+import {initStoreKey, updateItemProps} from '@/BubotCore/helpers/mixinStore/mutations'
+import {mode, getProps} from '@/BubotCore/helpers/mixinStore/getters'
 
 export default {
   namespaced: true,
@@ -17,17 +17,17 @@ export default {
   mutations: {
     initStoreKey: initStoreKey,
     updateItemProps: updateItemProps,
-    loading(state, { uid, loading, item} ) {
-      state[uid] = { loading, item}
+    loading(state, {uid, loading, item}) {
+      state[uid] = {loading, item}
     },
   },
   actions: {
     initForm: initForm,
     error: error,
     read: async (store, payload) => {
-      store.commit('loading', { uid: payload.store.uid, item: {}, loading: true })
+      store.commit('loading', {uid: payload.store.uid, item: {}, loading: true})
       let item = await processInDataSource('read', store, payload)
-      store.commit('loading', { uid: payload.store.uid, item, loading: false })
+      store.commit('loading', {uid: payload.store.uid, item, loading: false})
     },
     update: async (store, payload) => {
       // store.commit('loading', { uid: payload.store.uid, value: true })

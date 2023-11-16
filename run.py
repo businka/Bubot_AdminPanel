@@ -1,7 +1,7 @@
 import logging
 import os.path
 
-from BubotObj.OcfDevice.subtype.WebServer.WebServer import WebServer
+from bubot_webserver.buject.OcfDevice.subtype.WebServer.WebServer import WebServer
 
 logging.basicConfig()
 logger = logging.getLogger('Bubot')
@@ -15,4 +15,5 @@ if __name__ == '__main__':
     _path = os.path.join(os.path.dirname(__file__), 'conf')
     device = WebServer.init_from_file(path=_path)
     device.run()
+    logger.info('run complete')
     pass

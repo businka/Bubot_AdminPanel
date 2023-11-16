@@ -1,0 +1,21 @@
+{
+  "/oic/d": {
+    "di": "5fcf4a22-edbe-4267-96eb-5d29533598f2",
+    "piid": "6f868c3b-14e3-4a33-a63d-5b98c3281f71"
+  },
+  "/oic/con": {
+    "udpCoapPort": 52471,
+    "running_devices": [
+      {
+        "di": "6d350e5d-8b7c-459e-a671-e5860b318796",
+        "dmno": "SerialServerHF511",
+        "n": "Serial server HF511A"
+      }
+    ]
+  },
+  "/oic/sec/pstat": {
+    "dos": {
+      "s": 0
+    }
+  }
+}

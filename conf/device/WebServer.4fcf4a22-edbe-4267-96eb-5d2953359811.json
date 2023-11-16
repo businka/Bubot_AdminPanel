@@ -1,0 +1,26 @@
+{
+  "/oic/d": {
+    "di": "4fcf4a22-edbe-4267-96eb-5d2953359811",
+    "piid": "4eb0a526-fd24-48f0-8d4b-e697451b7b23"
+  },
+  "/oic/con": {
+    "logLevel": "debug",
+    "udpCoapPort": 57930,
+    "running_devices": [
+      {
+        "di": "5fcf4a22-edbe-4267-96eb-5d29533598f2",
+        "dmno": "VirtualServer"
+      },
+      {
+        "di": "5fcf4a22-edbe-4267-96eb-5d29533598f1",
+        "dmno": "VirtualServer"
+      }
+    ],
+    "port": 8085
+  },
+  "/oic/sec/pstat": {
+    "dos": {
+      "s": 0
+    }
+  }
+}

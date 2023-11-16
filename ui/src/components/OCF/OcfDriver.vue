@@ -1,18 +1,19 @@
 <script>
-import BaseTemplateMixin from '../../BubotCore/helpers/mixinTemplate/baseForm'
-import ActionMixin from '../../BubotCore/helpers/mixinTemplate/action'
-import { updateObject, objHasOwnProperty } from '../../Helpers/BaseHelper'
-import { initDataSource } from '../../BubotCore/components/DataSource/DataSourceLoader'
+import BaseTemplateMixin from '@/BubotCore/helpers/mixinTemplate/baseForm'
+import ActionMixin from '@/BubotCore/helpers/mixinTemplate/action'
+import { updateObject, objHasOwnProperty } from '@/Helpers/BaseHelper'
+import { initDataSource } from '@/BubotCore/components/DataSource/DataSourceLoader'
 import storage from './store'
 // import Vue from 'vue'
 import schemaStorage from './OcfSchema.store'
+import {defineAsyncComponent} from "vue"
 
 
 export default {
   name: 'OcfDriver',
   components: {
-    OcfResourceTmpl: () => import('./OcfDriverResource'),
-    PanelToolBar: () => import('../../BubotCore/components/Simple/PanelToolBar'),
+    OcfResourceTmpl: defineAsyncComponent(() => import('./OcfDriverResource')),
+    PanelToolBar: defineAsyncComponent(() => import('@/BubotCore/components/Simple/PanelToolBar')),
   },
   mixins: [BaseTemplateMixin, ActionMixin],
   props: {
@@ -128,7 +129,7 @@ export default {
               //
             }
             let res = this.mainRes
-            if (this.$t(_path) === _path) { // для служебных ресурсов имя показывается стандартное и оно локализовано
+            if (this.$t(`${_path}.title`) === _path) { // для служебных ресурсов имя показывается стандартное и оно локализовано
               res = this.mainRes
             } else {
               res = this.serviceRes

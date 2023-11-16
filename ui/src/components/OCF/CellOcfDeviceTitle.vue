@@ -7,7 +7,7 @@ export default {
       default: () => {
       }
     },
-    value: {
+    modelValue: {
       type: Object,
       default: () => {
       }
@@ -19,10 +19,10 @@ export default {
 <template>
   <div>
     <v-row class="d-flex align-baseline  pa-0 ma-0">
-      <div class="text-body-1 pa-0 ma-0">{{ value.n }}</div>
+      <div class="text-body-1 pa-0 ma-0">{{ modelValue.n }}</div>
     </v-row>
     <v-row class="text-caption pa-0 ma-0 text--secondary">
-      {{ value._id }}
+      {{ modelValue.di }}
     </v-row>
   </div>
 </template>

@@ -2,7 +2,7 @@ import unittest
 import urllib.parse
 from aiohttp import FormData
 from aiohttp.test_utils import AioHTTPTestCase, unittest_run_loop
-from BubotObj.OcfDevice.subtype.WebServer.WebServer import WebServer
+from bubot_admin_panel.buject.OcfDevice.subtype.WebServer.WebServer import WebServer
 
 
 class TestUserAccessRight(AioHTTPTestCase):

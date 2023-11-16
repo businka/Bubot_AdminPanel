@@ -1,13 +1,14 @@
 <script>
-import { updateObject } from '../../../Helpers/BaseHelper'
+import { updateObject } from '@/Helpers/BaseHelper'
+import {defineAsyncComponent} from "vue"
 
 export default {
   name: 'AddDeviceWizard',
   components: {
-    StepSelectEcosystem: () => import('./StepSelectEcosystem'),
-    StepDiscoverDevice: () => import('./StepDiscoverDevice'),
-    StepAppleInputPin: () => import('./StepAppleInputPin'),
-    StepConfigureResources: () => import('./StepConfigureResources')
+    StepSelectEcosystem: defineAsyncComponent(() => import('./StepSelectEcosystem')),
+    StepDiscoverDevice: defineAsyncComponent(() => import('./StepDiscoverDevice')),
+    StepAppleInputPin: defineAsyncComponent(() => import('./StepAppleInputPin')),
+    StepConfigureResources: defineAsyncComponent(() => import('./StepConfigureResources'))
   },
 
   props: {

@@ -1,8 +1,10 @@
 <script>
+import {defineAsyncComponent} from "vue"
+
 export default {
   name: 'TreeView',
   components: {
-    'TreeViewNode': () => import('./TreeViewNode'),
+    'TreeViewNode': defineAsyncComponent(() => import('./TreeViewNode')),
   },
   props: {
     value: {

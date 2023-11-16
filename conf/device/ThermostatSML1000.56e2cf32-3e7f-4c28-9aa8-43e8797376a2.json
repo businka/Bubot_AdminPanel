@@ -1,0 +1,29 @@
+{
+  "/oic/d": {
+    "di": "56e2cf32-3e7f-4c28-9aa8-43e8797376a2",
+    "piid": "b83593f8-349c-4d30-b736-c4ad243b6a25"
+  },
+  "/oic/con": {
+    "udpCoapPort": 53177,
+    "slave": 162,
+    "master": {
+      "eps": [
+        {
+          "ep": "coap://192.168.1.11:52475",
+          "net_interface": "192.168.1.11"
+        }
+      ],
+      "anchor": "ocf://6d350e5d-8b7c-459e-a671-e5860b318796/modbus_msg",
+      "n": "Serial server HF511A"
+    }
+  },
+  "/oic/sec/pstat": {
+    "dos": {
+      "s": 0
+    }
+  },
+  "/power": {
+    "n": "Теплый пол туалет",
+    "value": true
+  }
+}

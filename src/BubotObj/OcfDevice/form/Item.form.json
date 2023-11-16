@@ -1,9 +1,0 @@
-{
-  "template": "OcfDevice",
-  "width": "600",
-  "dataSource": {
-    "type": "Service",
-    "keyProperty": "_id",
-    "objName": "OcfDevice"
-  }
-}

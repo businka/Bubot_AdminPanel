@@ -1,5 +1,5 @@
 import setuptools
-from src.BubotObj.OcfDevice.subtype.AdminPanel import __version__
+from bubot_admin_panel.buject.OcfDevice.subtype.AdminPanel import __version__
 
 with open("README.md", "r") as fh:
     long_description = fh.read()

@@ -1,0 +1,32 @@
+{
+  "/oic/d": {
+    "di": "5fcf4a22-edbe-4267-96eb-5d29533598f1",
+    "piid": "3451f8b0-ac85-4cbd-9451-c38a15352a3a"
+  },
+  "/oic/con": {
+    "udpCoapPort": 52473,
+    "running_devices": [
+      {
+        "di": "3b0a8390-5f5b-4e0c-bc29-b4fcdf725864",
+        "dmno": "RelayWBMR6C",
+        "n": "Relay WB-MR6C"
+      },
+      {
+        "di": "98bce43e-f5a3-4959-8899-07915fd75ca0",
+        "dmno": "DimmerWBLED",
+        "n": "Dimmer WB-MRGB-D"
+      },
+      {
+        "di": "56e2cf32-3e7f-4c28-9aa8-43e8797376a2",
+        "dmno": "ThermostatSML1000",
+        "n": "Thermostat SML1000",
+        "enable": false
+      }
+    ]
+  },
+  "/oic/sec/pstat": {
+    "dos": {
+      "s": 0
+    }
+  }
+}

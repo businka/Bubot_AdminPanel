@@ -1,0 +1,25 @@
+{
+  "template": "OcfDevice",
+  "width": "600",
+  "dataSource": {
+    "type": "Service",
+    "keyProperty": "_id",
+    "objName": "OcfDevice"
+  },
+  "toolBar": {
+    "template": "ToolBar",
+    "visible": true,
+    "massOperationsBar": false,
+    "items": [
+      {
+        "name": "CallDataSourceForSelectedItems",
+        "icon": "mdi-reload",
+        "title": "Reload",
+        "data": {
+          "method": "reload"
+        }
+      }
+    ]
+  },
+  "projection": null
+}
